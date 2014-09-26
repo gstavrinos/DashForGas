@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainwindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gstavrinos.dashforgas.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+<fragment 
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+
+<Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:text="Please Wait" />
+
+<TextView
+        android:id="@+id/wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:text="" />
+
+<Button
+        android:id="@+id/xy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Distributions of Gas Stations based on their distance from the center of Athens" />
+
+<Button
+        android:id="@+id/pie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xy"
+        android:layout_alignParentLeft="true"
+        android:text="Percentage of Normal and Mixed Gas Stations" />
+
+<Button
+        android:id="@+id/pie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pie1"
+        android:layout_alignParentLeft="true"
+        android:text="Distribution of Gas Station in the major regions of Greece" />
+
+<Button
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Find all the gas station within 10km radius" />
+
+<Button
+        android:id="@+id/mixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all"
+        android:layout_alignParentLeft="true"
+        android:text="Find only mixed gas stations within 10km radius" />
+
+<Button
+        android:id="@+id/closest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mixed"
+        android:layout_alignParentLeft="true"
+        android:text="Find the closest gas station" />
+
+</RelativeLayout>
